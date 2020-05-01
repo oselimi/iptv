@@ -1,7 +1,6 @@
-<%= render 'shared/errors', obj: @user %>
-<form id="all">
+<div id="all">
   <%= form_for @user do |u|%>
-
+  <%= render 'shared/errors', obj: @user%>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputUsername4">Username</label>
@@ -37,4 +36,4 @@
     <br/>
     <%= u.submit "Accept", class:"btn btn-primary btn-lg btn-block" %>
   <% end %>
-</form>
+</div>
