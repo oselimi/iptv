@@ -1,0 +1,18 @@
+<div id="all">
+  <%= form_for @product do |p|%>
+    <%= render 'shared/errors', obj: @product %>
+    <div class="form-group">
+      <label for="inputAddress2">Title</label>
+      <%= p.text_field :title, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Link</label>
+      <%= p.text_field :link, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= p.file_field :image , class: "form-control"%>
+    </div>
+    <br><br>
+    <%= p.submit "Post", class: "btn btn-primary btn-lg btn-block" %>
+  <% end %>
+</div>

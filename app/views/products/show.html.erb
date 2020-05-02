@@ -1,0 +1,10 @@
+<%= provide(:title, "Home") %>
+<h1> Home Page </h1>
+
+
+<video class="vd" width="1000px" height="600px" loop pause controls>
+  <source src="<%= @product.link %>" >
+</video>
+<% @products.each do |product| %>
+  <%= link_to product.title, product_path(product) %>
+<% end %>

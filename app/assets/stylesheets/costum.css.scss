@@ -1,5 +1,12 @@
 @import "bootstrap";
+body {
+  background-image: asset-url('dep.jpg');
+  background-size: auto;
+}
 
+.head {
+  background-color: black;
+}
 
 #all {
     margin-top: 10%;
@@ -25,4 +32,9 @@
 }
 .form-group {
   font-style: oblique;
+}
+
+
+.vd {
+  margin-left: 10px ;
 }
