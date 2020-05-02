@@ -17,13 +17,13 @@ module SessionsHelper
 
   def log_out
     session[:user_id] = nil
-    redirect_to login_path
+    redirect_to root_path
   end
 
   def require_user
     unless  logged_in?
       flash[:danger] = "You must be loggeed in?"
-      redirect_to login_path
+      redirect_to root_path
     end
   end
 end
