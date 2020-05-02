@@ -13,8 +13,10 @@
       <li class="list-group-item">City: <%= @user.city %></li>
     </ul>
     <div class="card-body">
-      <%= link_to 'Edit', edit_user_path(current_user) %>
-      <a href="#" class="card-link">Back to list</a>
+      <%= link_to 'Edit', edit_user_path(current_user), class:"btn btn-info" %>
+      <% if logged_in? && current_user.admin? %>
+        <%= link_to 'Delete', user_path, method: :delete, data: {confirm: "Are you sure? "}, class:"btn btn-danger" %>
+      <% end %>
     </div>
   </div>
 </div>
