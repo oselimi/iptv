@@ -1,0 +1,21 @@
+<%= provide(:title, "Users")%>
+<h1 align="center">Users</h1>
+<div class="row row-cols-1 row-cols-md-3">
+  <% @users.each do |user| %>
+    <div class="col mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><%= user.username %></h2>
+          <p class="card-text"><%= user.email%></p>
+          <p class="card-text"><%= user.telephone%></p>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <%= link_to 'View', user_path(user), class:"btn btn-info" %>
+          <%= link_to 'Edit', edit_user_path(user) , class:"btn btn-warning"%>
+          <%= link_to 'Delete', user_path(user), method: :delete, data: {confirm: "Are you sure? "}, class:"btn btn-danger" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
