@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Welcome to you company"
-      redirect_to @user
+      redirect_to users_path
     else
       render 'new'
     end
@@ -35,6 +35,13 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       render 'edit'
+    end
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    if @user.destroy
+      flash[:danger] = "User now removed"
     end
   end
 
