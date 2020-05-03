@@ -1,16 +1,14 @@
 <div class="head">
 <% if logged_in? && current_user.admin? %>
-  <%= link_to 'Create new client', signup_path, class: "btn btn-outline-success" %>
-  <%= link_to 'Create new IPTV', new_product_path, class: "btn btn-outline-success" %>
-  <%= link_to 'All Users', users_path, class: "btn btn-outline-success" %>
-  <%= link_to 'All IPTV', products_path, class: "btn btn-outline-success"%>
+  <%= link_to 'Create new client', signup_path, class: "btn btn-outline-secondary" %>
+  <%= link_to 'Create new IPTV', new_product_path, class: "btn btn-outline-secondary" %>
+  <%= link_to 'All Users', users_path, class: "btn btn-outline-secondary" %>
+  <%= link_to 'All IPTV', products_path, class: "btn btn-outline-secondary"%>
 
-  <%= link_to 'Logout', logout_path, method: :delete, class: "btn btn-outline-success float-right" %>
-  <%= link_to 'My Profile', user_path(current_user), class: "btn btn-outline-success float-right" %>
+  <%= link_to 'Logout', logout_path, method: :delete, class: "btn btn-outline-secondary float-right" %>
+  <%= link_to 'My Profile', user_path(current_user), class: "btn btn-outline-secondary float-right" %>
 <% elsif logged_in? %>
-  <%= link_to 'IPTV - live', product_path, class: "btn btn-outline-success"%>
-  <%= link_to 'My Profile', user_path(current_user), class: "btn btn-outline-success" %>
-  <%= link_to 'Logout', logout_path, method: :delete, class: "btn btn-outline-success float-right" %>
+  <%= link_to 'Logout', logout_path, method: :delete, class: "btn btn-outline-secondary float-right" %>
 <% end %>
 </div>
 <hr>

@@ -7,8 +7,8 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
     @products = Product.all
+    @product = Product.find(params[:id])
   end
 
   def new
@@ -43,6 +43,9 @@ class ProductsController < ApplicationController
       flash[:danger] = "IPTV successfully deleted"
       redirect_to products_path
     end
+  end
+
+  def blog
   end
 
   private

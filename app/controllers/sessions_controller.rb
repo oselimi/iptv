@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       flash[:success] = "Welcome guest"
       log_in user
-      redirect_to user_path(user)
+      redirect_to blog_path
     else
       flash[:danger] = "You must be logged in to watch our channels"
       render 'new'

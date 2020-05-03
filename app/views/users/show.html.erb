@@ -1,19 +1,18 @@
 <% provide(:title, @user.username)%>
-<h1 align="center">Profile</h1>
 <div id="all1">
-  <div class="card"  style="width: 18rem;">
+  <div class="card"  style="width: 19rem;">
     <%= gravatar_for @user %>
     <div class="card-body">
       <h5 class="card-title"><%= @user.username %></h5>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Email: <%= @user.email %></li>
-      <li class="list-group-item">Phone: <%= @user.telephone %></li>
-      <li class="list-group-item">Address: <%= @user.address %></li>
-      <li class="list-group-item">City: <%= @user.city %></li>
-    </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Email: <%= @user.email %></li>
+        <li class="list-group-item">Phone: <%= @user.telephone %></li>
+        <li class="list-group-item">Address: <%= @user.address %></li>
+        <li class="list-group-item">City: <%= @user.city %></li>
+      </ul>
     <div class="card-body">
-      <%= link_to 'IPTV', product_path %>
+      <%= link_to 'Back to IPTV', product_path, class:"btn btn-success"%>
       <%= link_to 'Edit', edit_user_path(current_user), class:"btn btn-info" %>
       <% if logged_in? && current_user.admin? %>
         <%= link_to 'Delete', user_path, method: :delete, data: {confirm: "Are you sure? "}, class:"btn btn-danger" %>

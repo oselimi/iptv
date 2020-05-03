@@ -1,40 +1,105 @@
 @import "bootstrap";
 body {
-  background-image: asset-url('dep.jpg');
-  background-size: auto;
+  background-image: asset-url('b.jpg');
+  margin: auto;
 }
-
-.head {
-  background-color: black;
+h1 {
+  color:whitesmoke;
 }
-
 #all {
-    margin-top: 10%;
+    background-color: transparent;
+    color: whitesmoke;
+    margin-top: 80px;
     width: 80%;
-    padding-left: 250px;
+    margin-left: 150px;
 }
-
 #all1 {
-  margin-top: 10%;
-  width: 80%;
-  padding-left: 40%;
+  margin: 1cm;
+  margin-left: 40%;
 }
-
+.card{
+  border-color: rgb(117, 114, 114);
+  background-color: transparent;
+  color: white;
+}
+.list-group-item {
+  background-color: transparent;
+  color: white;
+}
 #all2 {
-  border-style: dashed;
-  margin-top: 10%;
-  width: 50%;
-  margin-left: 25%;
+  background-color: transparent;
+  margin-top: 10rem;
+  width: 30%;
+  margin-left: 35%;
   padding: 20px;
+  color:whitesmoke;
+  font-size: 20px;
+  font-style: initial;
+}
+#title {
+  text-align: center;
+  font-size: 80px;
+  font-family: fantasy;
+  margin: 20px;
+  margin-top: auto;
+}
+#title:hover{
+  color: rgb(117, 114, 114);
 }
 .btn-dark{
   margin-left: 40%;
+  background-color: rgb(117, 114, 114);
 }
-.form-group {
-  font-style: oblique;
+.btn-outline{
+  background-color: rgb(117, 114, 114);
+}
+.ct {
+  width: auto;
+  height: auto;
+  background-color: rgb(182, 182, 182);
+  margin-top: 5cm;
+}
+.home {
+  text-align: center;
+  color:rgb(182, 182, 182);
+  font-size: 70px;
+  font-family: monospace;
+  font-style: initial;
+}
+.clock {
+  text-align: center;
+  color: rgb(182, 182, 182);
+}
+#tv {
+  padding: 5px;
+  margin-left: 30rem;
 }
 
+.card-deck .card{
+  border: none;
+  margin-top: 20px;
+
+}
 
 .vd {
-  margin-left: 10px ;
+  position: fixed;
+}
+.tas{
+  width: 300px;
+  height: 480px;
+  margin-left: 58rem;
+  overflow: auto;
+
+  border: 5px;
+ }
+
+.list-group-item a{
+  color: rgb(182, 182, 182);
+  font-family: cursive;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  color: white;
 }

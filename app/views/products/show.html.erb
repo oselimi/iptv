@@ -1,10 +1,16 @@
-<%= provide(:title, "Home") %>
-<h1> Home Page </h1>
-
-
-<video class="vd" width="1000px" height="600px" loop pause controls>
-  <source src="<%= @product.link %>" >
-</video>
-<% @products.each do |product| %>
-  <%= link_to product.title, product_path(product) %>
-<% end %>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <video class="vd" width="900px" height="500px"  controls>
+        <source src="<%= @product.link %>" >
+      </video>
+    </div>
+  </div>
+</div>
+<div class="tas">
+  <% @products.each do |product| %>
+    <ul class="list-group">
+      <li class="list-group-item"><%= link_to product.title, product_path(product) %></li>
+    </ul>
+  <% end %>
+</div>

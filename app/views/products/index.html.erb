@@ -1,5 +1,6 @@
 <%= provide(:title, "Home") %>
-<h1> Home Page </h1>
+<h1 align="center" class="font-weight-bold">all IPTV </h1>
+<br>
 <% if logged_in? && current_user.admin? %>
   <div class="row row-cols-1 row-cols-md-3">
     <% @products.each do |product| %>

@@ -1,0 +1,17 @@
+<%provide(:title, "MOON IPTV")%>
+<img src="/assets/moon.png" id="home"  width="250px" height="250px">
+<h1 class="home">Welcome to MOON IPTV</h1>
+  <p class="clock">
+    <%= Time.now %>
+  </p>
+<% if logged_in? %>
+  <div class="ct">
+    <%= link_to product_path(current_user) do %>
+      <img id="tv" src="/assets/tv.png" width="120px" height="120px">
+    <% end %>
+    <%= link_to user_path(current_user) do %>
+      <img id="tv" src="/assets/customer.png" width="120px" height="120px">
+    <% end %>
+  </div>
+<% end %>
+
