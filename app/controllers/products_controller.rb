@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @product.user = current_user
+    @product.user = User.first
     if @product.save
       flash[:success] = "IPTV uploaded successsfully"
       redirect_to products_path
