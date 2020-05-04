@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Welcome to you company"
-      redirect_to users_path
+      redirect_to users_path(current_user.admin?)
     else
       render 'new'
     end
@@ -42,6 +42,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.destroy
       flash[:danger] = "User now removed"
+      redirect_to users_path
     end
   end
 
