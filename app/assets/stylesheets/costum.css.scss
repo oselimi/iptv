@@ -1,7 +1,10 @@
 @import "bootstrap";
 body {
   background-image: asset-url('b.jpg');
+  width: auto;
+  height: auto;
 }
+
 h1 {
   color:whitesmoke;
 }
@@ -53,6 +56,7 @@ h1 {
   background-color: rgb(117, 114, 114);
 }
 .ct {
+  position: static;
   width: auto;
   height: auto;
   background-color: rgb(182, 182, 182);
@@ -70,10 +74,11 @@ h1 {
   color: rgb(182, 182, 182);
 }
 #tv {
+  position: static;
   width: 85px;
   height: 85px;
   padding: 5px;
-  margin-left: 30rem;
+  margin-left: 25rem;
 }
 
 .card-deck .card{
@@ -86,9 +91,10 @@ h1 {
   position: fixed;
 }
 .tas{
+  position: fixed;
   width: 300px;
-  height: 480px;
-  margin-left: 58rem;
+  height: 400px;
+  margin-left: 50rem;
   overflow: auto;
 
   border: 5px;
@@ -97,7 +103,7 @@ h1 {
 .list-group-item a{
   color: rgb(182, 182, 182);
   font-family: cursive;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
