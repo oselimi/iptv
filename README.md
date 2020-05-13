@@ -1,24 +1,15 @@
-# README
+# MOON IPTV
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In Moon IPTV you can to watch all local tv of North Macedonia
 
-Things you may want to cover:
+All of what you to do is:
 
-* Ruby version
+* You must be our client
 
-* System dependencies
+* You must have a username and password authenticates form company
 
-* Configuration
+* No limited watching
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* It's all for free
 
 * ...
